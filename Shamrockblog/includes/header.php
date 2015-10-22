@@ -18,7 +18,7 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-md-6">
-				  <a href="index.php" id="logo"><img src="images/logo.jpg" alt="St. Martha Banner"></a>
+				  <a href="index.php" id="logo"><img src="images/bloglogo.jpg" alt="St. Martha Banner"></a>
 				</div>
 				<div class="col-md-6">
 					<div id="header-right">
@@ -26,7 +26,7 @@
 						<div id="sign-in-register-link">
 							<a href="">Sign In</a>
 							&nbsp;&nbsp;|&nbsp;&nbsp;
-							<a href="">Register</a>
+							<a href="register.php">Register</a>
 						</div>
 					</div>
 				</div>

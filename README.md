@@ -13,3 +13,10 @@ Conversely, if you have no exposure as a child, it's extremely difficult to lear
 Our computer science teacher at our children's school, James Key, has graciously agreed to allow me to help create a Coding Club at St. Martha Elementary this January, coinciding with the end of ["Hour of Code"](https://hourofcode.com/us).
 
 I decided to devote this PHP project for [Code Louisville](http://www.codelouisville.org/) to helping the students further delve into their computer interest by using PHP to create a mini-blogging platform for them to use to reflect on anything they want, the point being simply to ensure they're spending time working on a computer, instead of an XBox, during free time in the Winter.
+
+**Resources**
+https://teamtreehouse.com/
+https://daveismyname.com/
+http://beta.phpformatter.com/
+https://cuttingedgetech.wordpress.com/2009/09/07/basic-blog-1/
+http://php.net/manual/en/book.pdo.php

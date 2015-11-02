@@ -4,11 +4,11 @@
 	<title>St. Martha Student Blog</title>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="icon" href="favicon.ico">
+	<link rel="icon" href="../images/favicon.ico">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
-	<!--<link rel="stylesheet" type="text/css" href="includes/reset.css">-->
-	<link rel="stylesheet" type="text/css" href="includes/style.css">
-	<link rel="stylesheet" type="text/css" href="includes/responsive.css">
+	<!--<link rel="stylesheet" type="text/css" href="reset.css"> -->
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" type="text/css" href="responsive.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 </head>
@@ -17,14 +17,15 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-md-6">
-				  <a href="index.php" id="logo"><img src="images/bloglogo.jpg" alt="St. Martha Banner"></a>
+				  <a href="../index.php" id="logo"><img src="../images/bloglogo.jpg" alt="St. Martha Banner"></a>
 				</div>
 				<div class="col-md-6">
 					<div id="header-right">
+
 						<div id="sign-in-register-link">
-							<a href="admin/login.php">Sign In</a>
+							<a href="login.php">Sign In</a>
 							&nbsp;&nbsp;|&nbsp;&nbsp;
-							<a href="admin/add_user.php">Register</a>
+							<a href="add_user.php">Register</a>
 						</div>
 					</div>
 				</div>
@@ -44,15 +45,15 @@
                 <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 	<ul class="nav navbar-nav">
                 		<li>
-                		<a href="about.php" class="nav-link" id="about-us">About</a></li>
+                		<a href="../about.php" class="nav-link" id="about-us">About</a></li>
                 		<li>
-						<a href="news.php" class="nav-link" id="news">News</a></li>
+						<a href="../news.php" class="nav-link" id="news">News</a></li>
 						<li>
-						<a href="calendar.php" class="nav-link" id="calendar">Calendar</a></li>
+						<a href="../calendar.php" class="nav-link" id="calendar">Calendar</a></li>
 						<li>
-						<a href="admin/add_post.php" class="nav-link" id="blog">Blog</a></li>
+						<a href="add_post.php" class="nav-link" id="blog">Blog</a></li>
 						<li>
-						<a href="howto.php" class="nav-link" id="howto">How to</a></li>
+						<a href="../howto.php" class="nav-link" id="howto">How to</a></li>
                 	</ul>
 			    </div><!--navbar collapse-->
 			</nav><!--navbar-->

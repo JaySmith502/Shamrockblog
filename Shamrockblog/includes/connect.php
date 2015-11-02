@@ -11,7 +11,7 @@ session_start();
 define('DBHOST', 'localhost');
 define('DBNAME', 'stmarthablog');
 define('DBUSER', 'root');
-define('DBPASS', 'C00per75)3791');
+define('DBPASS', '*************');
 
 $db = new PDO("mysql:host=" . DBHOST . ";port=3306;dbname=" . DBNAME, DBUSER, DBPASS);
 $db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);

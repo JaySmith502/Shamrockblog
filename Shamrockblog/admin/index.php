@@ -31,7 +31,7 @@ if(isset($_GET['deleteIt'])){
 
     <?php if(isset($_GET[ 'action'])) { echo '
 <h3>
-Post '. $_GET[ 'action']. '.
+Post '. $_GET['action']. '.
 </h3>
 '; }?>
 
@@ -47,7 +47,11 @@ Post '. $_GET[ 'action']. '.
                 Action
             </th>
         </tr>
-        <?php try { $statement=$db->query('SELECT ID, pTitle, pDate FROM tposts ORDER BY ID DESC'); while ($row = $statement-> fetch()) { echo '
+        <?php
+        //injects session user into WHERE sort to ensure that current logged in user only sees his/her posts
+        //I'm very proud of figuring out this one!
+        $user = $_SESSION['author'];
+        try { $statement=$db->query('SELECT ID, pTitle, pDate FROM tposts WHERE pAuthor = "'.$user.'" ORDER BY ID DESC'); while ($row = $statement-> fetch()) { echo '
         <tr>
             '; echo '
             <td>

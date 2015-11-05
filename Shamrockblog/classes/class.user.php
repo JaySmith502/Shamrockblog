@@ -44,7 +44,9 @@ public function login($username,$password){
 		//they match
 		$_SESSION['loggedin'] = true;
 		return true;
+		//$_SESSION['author'] = $username;
 	}
+
 }
 
 public function logout() {

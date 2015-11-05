@@ -17,7 +17,7 @@ body {
 }
 
 #wrapper {
-    margin: 188px auto;
+    margin: 188px auto 300px auto;
     width: 900px;
 }
 
@@ -61,7 +61,7 @@ li {
 }
 
 a {
-    color: #EF1F2F;
+    color: #6620BD;
     text-decoration: none;
 }
 
@@ -430,7 +430,7 @@ MAIN HEADER
     font-size: 15px;
     line-height: 35px;
     bottom: 0;
-    height: px;
+    max-height: 300px;
 }
 #footer h3 {
     font-weight: 600;

@@ -58,12 +58,13 @@ include("header.php");
 			try {
 
 
-				$statement = $db->prepare('INSERT INTO tposts (pTitle, pDesc, pContents,pDate) VALUES (:pTitle, :pDesc, :pContents, :pDate)');
+				$statement = $db->prepare('INSERT INTO tposts (pTitle, pDesc, pContents,pDate,pAuthor) VALUES (:pTitle, :pDesc, :pContents, :pDate, :pAuthor)');
 				$statement->execute(array(
 					':pTitle' => $pTitle,
 					':pDesc' => $pDesc,
 					':pContents' => $pContents,
-					':pDate' => date('Y-m-d H:i:s')
+					':pDate' => date('Y-m-d'),
+					':pAuthor' => $_SESSION['author']
 					));
 
 				header('Location: index.php?action=added');

@@ -24,6 +24,7 @@ require_once('../includes/connect.php');
 
 			//move user to index.php logged in now
 			header('Location: index.php');
+			$_SESSION['author'] = $username;
 			exit;
 		} else {
 			$message = '<p class="error">Wrong username or password, please resubmit</p>';

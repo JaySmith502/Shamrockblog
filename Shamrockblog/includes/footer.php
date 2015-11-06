@@ -80,7 +80,9 @@
 
 			<div id="footer-left">
 
-				&copy; &nbsp;<?php echo date("Y") ?>&nbsp; SAINT MARTHA COMMUNITY
+				&copy; &nbsp;<?php
+echo date("Y");
+?>&nbsp; SAINT MARTHA COMMUNITY
 
 				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 

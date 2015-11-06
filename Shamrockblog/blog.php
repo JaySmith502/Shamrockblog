@@ -2,7 +2,7 @@
 
 require('includes/connect.php')
 // displays a post that has been clicked on.
-
+    ;
 ?>
 
 <?php
@@ -10,7 +10,8 @@ require('includes/connect.php')
 $statement = $db->prepare('SELECT ID, pTitle, pContents, pDate FROM tposts WHERE ID = :ID');
 
 $statement->execute(array(
-    ':ID' => $_GET['id']));
+    ':ID' => $_GET['id']
+));
 $row = $statement->fetch();
 
 // error handler pushes user back to index.php

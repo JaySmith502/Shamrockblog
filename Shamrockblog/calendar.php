@@ -1,6 +1,7 @@
 <?php
 $pageTitle = "Calendar";
-$section = "calendar";
+$section   = "calendar";
 
 
-include("includes/header.php"); ?>
+include("includes/header.php");
+?>

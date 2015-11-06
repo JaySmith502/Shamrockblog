@@ -1,4 +1,5 @@
-<?php require_once('../includes/connect.php');
+<?php
+require_once('../includes/connect.php');
 
 $user->logout();
 session_unset();

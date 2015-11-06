@@ -1,6 +1,7 @@
 <?php
 $pageTitle = "How To";
-$section = "howto";
+$section   = "howto";
 
 
-include("includes/header.php"); ?>
+include("includes/header.php");
+?>

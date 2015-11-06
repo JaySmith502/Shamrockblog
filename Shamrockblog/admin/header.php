@@ -26,6 +26,8 @@
 							<a href="login.php">Sign In</a>
 							&nbsp;&nbsp;|&nbsp;&nbsp;
 							<a href="add_user.php">Register</a>
+							&nbsp;&nbsp;|&nbsp;&nbsp;
+							<a href="logout.php">Logout</a>
 						</div>
 					</div>
 				</div>

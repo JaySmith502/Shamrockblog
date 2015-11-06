@@ -1,5 +1,6 @@
 <?php
 $pageTitle = "About";
-$section = "about";
+$section   = "about";
 
-include("includes/header.php"); ?>
+include("includes/header.php");
+?>

@@ -45,11 +45,11 @@ if (isset($_POST['submit'])) {
     if (!isset($error)) {
         $hashedpassword = $user->password_hash($password, PASSWORD_BCRYPT);
         //username checker
-        $sthandler = $db->prepare("SELECT username FROM tusers WHERE username = :username");
-        $sthandler->bindParam(':username', $username);
-        $sthandler->execute();
+        $uname_check = $db->prepare("SELECT username FROM tusers WHERE username = :username");
+        $uname_check->bindParam(':username', $username);
+        $uname_check->execute();
 
-        if($sthandler->rowCount() > 0){
+        if($uname_check->rowCount() > 0){
         $error[] = "Username already exists, please choose another.";
         }  else {
         try {

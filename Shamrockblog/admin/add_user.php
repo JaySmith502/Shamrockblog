@@ -50,7 +50,7 @@ if (isset($_POST['submit'])) {
         $sthandler->execute();
 
         if($sthandler->rowCount() > 0){
-        echo "Username already exists, please choose another.";
+        $error[] = "Username already exists, please choose another.";
         }  else {
         try {
 

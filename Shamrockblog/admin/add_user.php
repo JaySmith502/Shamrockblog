@@ -23,7 +23,7 @@ if (isset($_POST['submit'])) {
     extract($_POST);
 
     if ($username == '') {
-        $error[] = "Please enter your username.";
+        $error[] = 'Please select a username.';
     }
 
     if ($password == '') {
@@ -31,20 +31,27 @@ if (isset($_POST['submit'])) {
     }
 
     if ($passwordConfirm == '') {
-        $error[] = "Please confirm your password.";
+        $error[] = 'Please confirm your password.';
     }
 
     if ($password != $passwordConfirm) {
-        $error[] = "Invalid Password, please try again";
+        $error[] = 'Invalid Password, please try again.';
     }
 
-    if ($email == '') {
-        $error[] = "Please enter your email address";
+    if (!filter_var($email, FILTER_VALIDATE_EMAIL)){
+        $error[] = "Please enter a valid email";
     }
 
     if (!isset($error)) {
         $hashedpassword = $user->password_hash($password, PASSWORD_BCRYPT);
+        //username checker
+        $sthandler = $db->prepare("SELECT username FROM tusers WHERE username = :username");
+        $sthandler->bindParam(':username', $username);
+        $sthandler->execute();
 
+        if($sthandler->rowCount() > 0){
+        echo "Username already exists, please choose another.";
+        }  else {
         try {
 
             $statement = $db->prepare('INSERT INTO tusers (username,password,email) VALUES (:username,:password,:email)');
@@ -61,11 +68,12 @@ if (isset($_POST['submit'])) {
             echo $e->getMessage();
         }
     }
+    }
 }
 
 if (isset($error)) {
     foreach ($error as $error) {
-        echo '<p class="error".' . $error . '</p>';
+        echo '<p class="error">'. $error . '</p>';
     }
 }
 // TODO: Add form at bottom for signing in

@@ -22,8 +22,12 @@ if (isset($_POST['submit'])) {
 
     extract($_POST);
 
+    if ($codeword != 'toybowl') {
+        $error[] = 'Sorry, you must have the code word to register.';
+    }
+
     if ($username == '') {
-        $error[] = "Please enter your username.";
+        $error[] = 'Please select a username.';
     }
 
     if ($password == '') {
@@ -31,20 +35,27 @@ if (isset($_POST['submit'])) {
     }
 
     if ($passwordConfirm == '') {
-        $error[] = "Please confirm your password.";
+        $error[] = 'Please confirm your password.';
     }
 
     if ($password != $passwordConfirm) {
-        $error[] = "Invalid Password, please try again";
+        $error[] = 'Invalid Password, please try again.';
     }
 
-    if ($email == '') {
-        $error[] = "Please enter your email address";
+    if (!filter_var($email, FILTER_VALIDATE_EMAIL)){
+        $error[] = "Please enter a valid email";
     }
 
     if (!isset($error)) {
         $hashedpassword = $user->password_hash($password, PASSWORD_BCRYPT);
+        //username checker
+        $uname_check = $db->prepare("SELECT username FROM tusers WHERE username = :username");
+        $uname_check->bindParam(':username', $username);
+        $uname_check->execute();
 
+        if($uname_check->rowCount() > 0){
+        $error[] = "Username already exists, please choose another.";
+        }  else {
         try {
 
             $statement = $db->prepare('INSERT INTO tusers (username,password,email) VALUES (:username,:password,:email)');
@@ -61,17 +72,25 @@ if (isset($_POST['submit'])) {
             echo $e->getMessage();
         }
     }
+    }
 }
 
 if (isset($error)) {
     foreach ($error as $error) {
-        echo '<p class="error".' . $error . '</p>';
+        echo '<p class="error">'. $error . '</p>';
     }
 }
 // TODO: Add form at bottom for signing in
 ?>
 
 	<form action='' method='post'>
+
+        <p><label>Code Word</label><br />
+        <input type='text' name='codeword' value='<?php
+if (isset($error)) {
+    echo $_POST['codeword'];
+}
+?>'</p>
 
 		<p><label>Username</label><br />
 		<input type='text' name='username' value='<?php

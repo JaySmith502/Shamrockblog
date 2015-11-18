@@ -1,114 +1,35 @@
-	<div id="footer">
+</div>
 
-		<div class="container">
+<div id="footer">
 
-			<div class="four-columns">
+    <div id="footer-left">
 
-				<h3>Heading</h3>
+        &copy; &nbsp;
+        <?php echo date( "Y"); ?>&nbsp; SAINT MARTHA COMMUNITY &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 
-				<a href="#">Link</a>
+        <!--<a href="#">Policies</a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 
-				<a href="#">Another Link</a>
+        <a href="#">Sitemap</a>-->
 
-				<a href="#">Another Link</a>
+        <div id="footer-right">
 
-				<a href="#">Another Link</a>
+            <a href="https://www.facebook.com/St-Martha-Church-and-School-593291480786774/" id="fb"><img src="../images/facebook.png" alt="Facebook logo" </a>
 
-				<a href="#">Another Link</a>
+            <a href="#" id="tw"><img src="../images/twitter.png" alt="Twitter logo" </a>
 
-				<a href="#">Another Link</a>
+            <a href="https://www.linkedin.com/in/jasonesmith1" id="li"><img src="../images/linked-in.png" alt="LinkedIn logo" </a>
 
-			</div>
+			<a href="mailto:webmaster@example.com" id="yt"><img src="../images/mail.png" alt="Mail logo" </a>
 
-			<div class="four-columns">
+        </div>
 
-				<h3>Another Heading</h3>
+    </div>
 
-				<a href="#">Link</a>
+    <div id="footer-logo"></div>
 
-				<a href="#">Another Link</a>
+</div>
 
-				<a href="#">Another Link</a>
-
-				<a href="#">Another Link</a>
-
-				<a href="#">Another Link</a>
-
-				<a href="#">Another Link</a>
-
-			</div>
-
-			<div class="four-columns">
-
-				<h3>Another Heading</h3>
-
-				<a href="#">Link</a>
-
-				<a href="#">Another Link</a>
-
-				<a href="#">Another Link</a>
-
-				<a href="#">Another Link</a>
-
-				<a href="#">Another Link</a>
-
-				<a href="#">Another Link</a>
-
-			</div>
-
-			<div class="four-columns">
-
-				<h3>Another Heading</h3>
-
-				<a href="#">Link</a>
-
-				<a href="#">Another Link</a>
-
-				<a href="#">Another Link</a>
-
-				<a href="#">Another Link</a>
-
-				<a href="#">Another Link</a>
-
-				<a href="#">Another Link</a>
-
-			</div>
-
-			<div id="footer-left">
-
-				&copy; &nbsp;<?php
-echo date("Y");
-?>&nbsp; SAINT MARTHA COMMUNITY
-
-				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-
-				<a href="#">Policies</a>
-
-				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-
-				<a href="#">Sitemap</a>
-
-
-
-				<div id="footer-right">
-
-					<a href="#" id="fb"><img src="../images/fb.jpg" alt="Facebook logo"</a>
-
-					<a href="#" id="tw"><img src="../images/tw.jpg" alt="Twitter logo"</a>
-
-					<a href="#" id="li"><img src="../images/li.jpg" alt="LinkedIn logo"</a>
-
-					<a href="#" id="yt"><img src="../images/yt.jpg" alt="Youtube logo"</a>
-
-				</div>
-
-			</div>
-
-			<div id="footer-logo"></div>
-
-		</div>
-
-	</div>
+</div>
 
 </body>
 

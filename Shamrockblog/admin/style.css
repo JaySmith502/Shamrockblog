@@ -484,7 +484,7 @@ MAIN HEADER
     color: #ccc;
 }
 #footer-right {
-    margin-top: 3%;
+    padding: 10px;
     margin-right: 3%;
     float: right;
 }
@@ -501,6 +501,9 @@ MAIN HEADER
 }
 #footer-right a:hover {
     opacity: 1;
+}
+#footer-right img {
+    margin: 5px;
 }
 #fb {
     width: 32px;

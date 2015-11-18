@@ -23,7 +23,7 @@ try {
         echo '<h1><a href="blog.php?id=' . $row['ID'] . '">', $row['pTitle'] . '
                 </a></h1>';
 
-        echo '<p>Posted on ' . date('jS M Y H:i:s', strtotime($row['pDate'])) . '</p>';
+        echo '<p>Posted on ' . date('jS M Y', strtotime($row['pDate'])) . '</p>';
 
         echo '<p>' . $row['pDesc'] . '</p>';
 

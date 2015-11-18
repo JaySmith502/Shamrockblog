@@ -12,7 +12,7 @@ if ($user->is_logged_in()) {
 }
 
 ?>
-
+<br>
 <div id="login">
 
 	<?php

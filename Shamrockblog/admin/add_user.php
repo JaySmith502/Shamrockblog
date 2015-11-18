@@ -22,6 +22,10 @@ if (isset($_POST['submit'])) {
 
     extract($_POST);
 
+    if ($codeword != 'toybowl') {
+        $error[] = 'Sorry, you must have the code word to register.';
+    }
+
     if ($username == '') {
         $error[] = 'Please select a username.';
     }
@@ -80,6 +84,13 @@ if (isset($error)) {
 ?>
 
 	<form action='' method='post'>
+
+        <p><label>Code Word</label><br />
+        <input type='text' name='codeword' value='<?php
+if (isset($error)) {
+    echo $_POST['codeword'];
+}
+?>'</p>
 
 		<p><label>Username</label><br />
 		<input type='text' name='username' value='<?php

@@ -17,9 +17,9 @@ I decided to devote this PHP project for [Code Louisville](http://www.codelouisv
 There is now a live version of this site [here](https://shamrocks.xyz/).  There will be subtle styling differences as I begin maintaining and updating the live site for actual student use, but will try to keep this repo current (repo db paswords and keys are not valid in live site for security reasons).
 
 **Resources**
--https://teamtreehouse.com/
--https://daveismyname.com/
--http://beta.phpformatter.com/
--https://cuttingedgetech.wordpress.com/2009/09/07/basic-blog-1/
--http://php.net/manual/en/book.pdo.php
--http://namecheap.com
+* https://teamtreehouse.com/
+* https://daveismyname.com/
+* http://beta.phpformatter.com/
+* https://cuttingedgetech.wordpress.com/2009/09/07/basic-blog-1/
+* http://php.net/manual/en/book.pdo.php
+* http://namecheap.com
